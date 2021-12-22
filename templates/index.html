@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <title>source code scanner</title>
+</head>
+<body>
+  <form action="/source" method="POST">
+  <div class="layout">
+    <div class="header">
+      <span class="header-content">
+        Xsource
+      </span>
+    </div>
+    <input type="text"  name="url" id="" value="" placeholder="https://www.etc.com"/><br>
+    <input type="submit" name="" id="btn" value="extract source" onclick="redirectSourcePage()"/>
+  </div>
+  </form>
+<script src="{{url_for('static', filename='index.js')}}" type="text/javascript"></script>
+</body>
+</html>
